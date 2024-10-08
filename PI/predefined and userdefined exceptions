@@ -1,0 +1,36 @@
+a) predefined exceptions
+DECLARE
+  e_divide_by_zero EXCEPTION;
+  PRAGMA EXCEPTION_INIT(e_divide_by_zero, -1476);  -- Assign error code -1476 to the exception
+  v_num1 NUMBER := 10;
+  v_num2 NUMBER := 0;
+  v_result NUMBER;
+BEGIN
+  -- Attempt division
+  v_result := v_num1 / v_num2;
+
+EXCEPTION
+  -- Handle divide-by-zero exception
+  WHEN e_divide_by_zero THEN
+    DBMS_OUTPUT.PUT_LINE('Error: Division by zero');
+END;
+/
+
+b) userdefined exceptions
+
+
+BEGIN
+  DECLARE
+    v_num1 NUMBER := 10;
+    v_num2 NUMBER := 0;
+    v_result NUMBER;
+  BEGIN
+    -- Attempt division
+    v_result := v_num1 / v_num2;
+  EXCEPTION
+    -- Handle divide-by-zero exception
+    WHEN ZERO_DIVIDE THEN
+      DBMS_OUTPUT.PUT_LINE('Error: Division by zero');
+  END;
+END;
+/
