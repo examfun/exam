@@ -1,0 +1,45 @@
+PI/SQL Blocks with basic by including following
+
+a sequential statements.
+
+DECLARE
+  a NUMBER := 30; -- Initial value of a
+BEGIN
+  <<loopstart>> -- Label for the loop
+  -- While loop execution
+  WHILE a < 50 LOOP
+    dbms_output.put_line('Value of a: ' || a); -- Output the current value of a
+    a := a + 1; -- Increment a by 1
+
+    -- Check if a is 35
+    IF a = 35 THEN
+      a := a + 1; -- Skip 35 and increment a
+      GOTO loopstart; -- Go back to the start of the loop
+    END IF;
+  END LOOP;
+END;
+/
+
+b)unconstrained loop
+
+DECLARE
+  l_loops NUMBER := 0; -- Variable to count the number of loops
+BEGIN
+  dbms_output.put_line('Before my loop'); -- Print a message before starting the loop
+
+  LOOP
+    -- Exit condition: Exit the loop if l_loops is greater than or equal to 5
+    IF l_loops >= 5 THEN
+      EXIT;
+    END IF;
+
+    -- Print the current loop iteration
+    dbms_output.put_line('Looped ' || l_loops || ' times');
+    
+    -- Increment the loop counter
+    l_loops := l_loops + 1;
+  END LOOP;
+
+  dbms_output.put_line('After my loop'); -- Print a message after the loop
+END;
+/
