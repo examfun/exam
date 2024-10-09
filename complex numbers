@@ -1,0 +1,43 @@
+ write a program for user defined complex number an Perform addition, substraction, Multiplication and division
+
+a = int(input("Enter real number: "))
+b = int(input("Enter imaginary number: "))
+c = complex(a, b)
+print("The complex number is: ", c)
+
+def inputs():
+    a = int(input("Enter real number: "))
+    b = int(input("Enter imaginary number: "))
+    C = complex(a, b)
+    print("The complex number is: ", C)
+    return C
+
+d1 = inputs()
+print(d1)
+d2 = inputs()
+print(d2)
+
+print("The addition is:", d1 + d2)
+print("The subtraction is:", d1 - d2)
+print("The multiplication is:", d1 * d2)
+print("The division is:", d1 / d2)
+
+Program to find the conjugate, real Part and imaginary part of a complex number
+
+  def inputs():
+    a = int(input("Enter real number: "))
+    b = int(input("Enter imaginary number: "))
+    C = complex(a, b)
+    print("The complex number is:", C)
+    return C
+
+d1 = inputs()
+print(d1)
+
+# Print the conjugate of the complex number
+print("The conjugate of the complex number is:", d1.conjugate())
+
+# Print the real and imaginary parts of the complex number
+print("The real part is:", d1.real)
+print("The imaginary part is:", d1.imag)
+
