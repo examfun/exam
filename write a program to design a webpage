@@ -1,0 +1,52 @@
+write a program to design a webpage
+a)use of document structure tag
+
+<html>
+<head> Web Technologies
+<title> Home Page </title>
+</head>
+<body>
+<h1> company Name </h1>
+<p> This is my web page in html </p>
+<p> This is an example of a paragraph </P>
+</body>
+</html>
+
+b)various text formatting tags
+
+<html>
+<head> Web Technologies
+<title> TEXT FORMATTING TAGS </title>
+</head>
+<h1> Formatting </h1>
+<body>
+<p> This is new paragraph 
+<p><B>This is an example of a paragraph?</B></p>
+<br><B><I>This is a new sentence without a paragraph break, in bold italics. </I></B>
+<HR>
+<p><u>MY First Page</u>
+</body>
+</html>
+
+c)list tag
+
+<html>
+<head>Web Technologies
+<title> LIST TAG </title>
+</head>
+<h1> Name </h1>
+<body>
+<p> An ordered List </P>
+<ol type = "2" >
+<li> HTML </li>
+<li> CSS </li>
+<li> PHP </li>
+</ol>
+<p> An ordered List </p>
+<ul>
+<li> HTML </li>
+<li> CSS </li>
+<li> PHP </li>
+</ul>
+</body>
+</html>
