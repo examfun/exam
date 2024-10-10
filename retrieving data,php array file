@@ -1,0 +1,42 @@
+php retrieving data
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+  </head>
+  <body>
+    <form action="php.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+#php file
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ $name = htmlspecialchars($_POST['name']);
+ $age = (int)$_POST['age'];
+ echo "Name: " . $name . "<br>";
+ echo "Age: " . $age . "<br>";
+}
+?>
+
+php.array file
+<?php
+$array = [5, 10, 15, 20, 25];
+$array[] = 30;
+unset($array[1]);
+sort($array);
+echo "Array elements: " . implode(", ", $array) . "<br>";
+echo "Sum of elements: " . array_sum($array) . "<br>";
+echo "Count of elements: " . count($array) . "<br>";
+?>
