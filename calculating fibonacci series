@@ -1,0 +1,50 @@
+write a javascript code for
+performing various mathematical operation such as calculating factorial/finding fibonacci series
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Factorial Calculator</title>
+</head>
+<body>
+  <h1>Calculating Factorial number using iteration</h1>
+  <script>
+    let n =5;
+    function Factorial(n) {
+      let fact = 1;
+	  if(n===0)
+	    return 1;
+      for (let i = 1; i <= n; i++) 
+          fact=fact * i;
+	  return fact;
+	}
+		  
+    console.log(Factorial(n));
+    document.write(Factorial(n));
+  </script>
+</body>
+</html>
+
+
+#Fibonacci
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci series in Javascript</title>
+</head>
+<body>
+  <h1>Performing Fibonacci series</h1>
+  <script>
+    var x=0,y=1,a,i;
+	var num=parseInt(prompt("Enter the limit of Fibonacci series: "));
+    document.write("Fibonacci Series: ");	
+	for(i=1;i<=num;i++)
+	{
+	   document.write(" <br> " + x);
+	   a = x + y;
+	   x = y;
+	   y = a;
+	};
+  </script>
+</body>
+</html>
