@@ -1,0 +1,102 @@
+create a xml file with internal/external dtd
+a)css
+
+<!DOCTYPE books [
+<!ELEMENT books (book+)>
+<!ELEMENT book (title, author, year)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+]>
+<books>
+  <book>
+    <title>The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <year>1925</year>
+  </book>
+  <book>
+    <title>Atomic Habits</title>
+    <author>James Clear</author> <!-- Corrected author name -->
+    <year>2016</year>
+  </book>
+  <book>
+    <title>To Kill a Mockingbird</title>
+    <author>Harper Lee</author>
+    <year>1960</year>
+  </book>
+</books>
+book {
+  font-size: 20px;
+  border: 2px solid black;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ecf0f1;
+  color: black;
+}
+
+title {
+  font-weight: bold;
+  color: #674C3C;
+}
+
+author {
+  font-style: italic;
+  color: #2880ba;
+}
+
+year {
+  color: #27ae60;
+}
+
+b)xsl
+
+<?xml-stylesheet version="1.0" href="XmlUsingCss.css" encoding="UTF-8"?>
+<!DOCTYPE books [
+  <!ELEMENT book (title,author,year)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+]>
+<books>
+   <book>
+    <title> The Great Gatsby</title>
+	<author>F.Scott Fitzgerald</author>
+	<year>1925</year>
+   </book>
+    <book>
+    <title>1984</title>
+	<author>Shivam Bhosale</author>
+	<year>1946</year>
+   </book>
+    <book>
+    <title>Thangalaan</title>
+	<author>P.ranjith</author>
+	<year>2024</year>
+   </book>
+</books>   
+
+
+#Css file
+book{
+  border:1px solid #bdc3c7;
+  background-color:#ecf0f1;
+  margin:10px 0;
+  border-radius:5px;
+}
+title{
+	font-size:20px;
+    font-style:script;
+	color:#e74c3c;
+}
+author{
+	font-size:20px;
+	font-style:italic;
+	color:#2980b9;
+}
+year{
+	font-style:bothir;
+	font-size:20px;
+	color:#27ae60;
+}
+	
+
