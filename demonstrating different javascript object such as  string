@@ -1,0 +1,39 @@
+write a javascript code for 
+demonstrating different javascript object such as 
+a)string
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript Object Demonstration</title>
+</head>
+<body>
+	<script>
+	    const str = "hello, Javascript!";
+		console.log("Original String: ",str);
+		console.log("Length of the string: ",str.Length);
+		console.log("uppercase: ",str.toUpperCase());
+		console.log("lowercase: ",str.toLowerCase());
+		console.log("Substring (7,10): ",str.substring(7,10));
+		console.log("Replace 'Javascript' with 'world': ",str.replace('JavaScript','World'));
+	</script>
+</body>
+
+
+b)regular expression
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+	    const str="hello, Javascript!";
+		const regex = /Javascript/;
+		const newStr = str.replace(regex,'world');
+		console.log("Does the string contain 'Javascript' ? ",regex.test(str));
+		console.log("String after RegExp replacement: ",newStr);
+	</script>
+</body>
+</html>		
+</html>	
+	
