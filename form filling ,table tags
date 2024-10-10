@@ -1,0 +1,70 @@
+form filling
+
+<html>
+<head> 
+<title> Name </title>
+</head>
+<h1> FORM FILLING </h1>
+<body>
+ <table>
+   <form>
+       <tr>
+	     <td>
+		   <label for="Name">
+		       Name
+		   </label>
+		 </td>
+		 <td><input type="text" id="Name:" placeholder="name"/>
+		 </td>
+	   </tr>
+	   <tr>
+	       <td><label for="Email">
+		           Email
+			   </label>
+		   </td>
+		   <td><input type="Email" id="Email:" placeholder="abc@gmail.com "/>
+		   </td>
+	   </tr>
+	   <tr>
+	   <td>Password</td>
+	   <td><input type="Password" label for="Password" placeholder="*****" />
+       </tr>
+		<tr>
+		    <td><label for="telenum" id="telnum:">
+			         telnum
+				</label>	 
+		    </td>
+			<td><input type="telenum" id="telenum:" placeholder="91 xxxxxxxxxx" />
+			</td>
+		</tr>
+		 <tr>
+		 <td><input type="Submit" value="Submit" /></td>
+		 </tr>
+	</form>
+ </table>
+</body>
+</html>
+
+table tags
+
+<html> 
+  <head>
+    <title> HTML TABLE </title>
+  </head>
+  <body>
+  <table>
+      <tr>
+	    <th> IT </th>
+		<th> CS </th>
+	  </tr>
+	  <tr>
+	    <td> FYIT </td>
+		<td> FYCS </td>
+	  </tr>
+	  <tr>
+	    <td> SYIT </td>
+		<td> SYCS </td>
+	  </tr>
+  </table>
+  </body>
+</html>
