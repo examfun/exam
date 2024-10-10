@@ -1,0 +1,45 @@
+css background,textstyle,positioning
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <title>CSS</title>
+    </head>
+    <style>
+        body{
+            background-image: url('pic1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+    h1,p{
+        padding:padding-right:20px;
+        background-color:transparent;
+        font-family:cursive;
+        color: white;
+        font-size:25px;
+        text-align: center;
+        text-decoration:underline;
+    }
+    .login-container {
+            background-color: transparent;
+            align-items: center;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0px 8px 9px rgba(23, 218, 236, 0.922);
+            width: 300px;
+    }
+    </style>
+    <body>
+    <div class="login-container">
+        <h1> WELCOME YOU ALL</h1>
+        <p> I am durgesh </p>
+        <p> I have added background image in my page with the help of CSS </p>
+    </div>
+</body>
+</HTML>
